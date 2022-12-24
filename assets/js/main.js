@@ -17,6 +17,8 @@ const dropbtnIcon = $(".dropbtn-icon");
 
 dropbtn.on("click", function () {
     $(".dropdown-content").toggleClass("is-active");
+    $(".dropbtn-icon-up").toggleClass("active");
+    $(".dropbtn-icon-down").toggleClass("active");
 });
 
 const slider = $(".reviews-slider");

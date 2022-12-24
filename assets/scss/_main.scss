@@ -18,6 +18,10 @@
     .sponsors-item {
         display: flex;
         align-items: center;
+
+        .sponsors-link:last-of-type{
+            margin-left: 50px;
+        }
     }
 
     @media (max-width: 1100px) {
@@ -31,6 +35,8 @@
         .sponsors-item {
             overflow-x: auto;
             justify-content: center;
+
+           
         }
     }
 }
@@ -375,6 +381,7 @@
     flex-direction: column;
     gap: 50px;
     background: url(../img/end.svg) no-repeat;
+    background-size: cover;
     padding: 100px;
     background-position: center;
     text-align: center;
@@ -389,5 +396,16 @@
     &-buttons {
         display: flex;
         gap: 30px;
+    }
+
+    @include _530px {
+        padding: 40px;
+        &-title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        &-buttons {
+            flex-direction: column;
+        }
     }
 }

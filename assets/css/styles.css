@@ -196,7 +196,7 @@ a {
   border: unset;
   text-transform: capitalize;
   font-size: 1.25rem;
-  line-height: 15px;
+  line-height: 20px;
   color: #242323;
   transition: 0.3s;
 }
@@ -346,7 +346,7 @@ a {
   max-width: 1920px;
   margin: 0 auto;
   background: url(../img/header-bg.png) no-repeat;
-  background-color: #E4F5EB;
+  background-color: #e4f5eb;
   background-position: 100% 100%;
 }
 @media (max-width: 1500px) {
@@ -398,7 +398,6 @@ a {
 }
 .container-nav .nav-link:hover {
   color: #303131;
-  font-weight: 600;
 }
 @media (max-width: 768px) {
   .container-nav .nav {
@@ -479,11 +478,24 @@ a {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
   z-index: 2;
+}
+.dropbtn .dropbtn-icon-up {
+  font-size: 12px;
+  display: none;
+}
+.dropbtn .dropbtn-icon-up.active {
+  display: inline-flex;
+}
+.dropbtn .dropbtn-icon-down {
+  font-size: 12px;
+  display: none;
+}
+.dropbtn .dropbtn-icon-down.active {
+  display: inline-flex;
 }
 
 .dropdown-content {
@@ -587,6 +599,9 @@ a {
 .sponsors-wrap .sponsors-item {
   display: flex;
   align-items: center;
+}
+.sponsors-wrap .sponsors-item .sponsors-link:last-of-type {
+  margin-left: 50px;
 }
 @media (max-width: 1100px) {
   .sponsors-wrap {
@@ -911,6 +926,7 @@ a {
   flex-direction: column;
   gap: 50px;
   background: url(../img/end.svg) no-repeat;
+  background-size: cover;
   padding: 100px;
   background-position: center;
   text-align: center;
@@ -924,6 +940,18 @@ a {
 .ticket-buttons {
   display: flex;
   gap: 30px;
+}
+@media (max-width: 530px) {
+  .ticket {
+    padding: 40px;
+  }
+  .ticket-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .ticket-buttons {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
