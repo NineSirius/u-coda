@@ -67,6 +67,10 @@
   color: #575859;
 }
 
+.icon-arrow-up:before {
+  content: "\ea32";
+}
+
 :root {
   --primary-color: #45b871;
   --light-color: #ffffff;
@@ -78,6 +82,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -99,6 +107,9 @@ a {
   text-decoration: underline;
   font-size: 1rem;
   font-weight: 600;
+}
+.link:hover {
+  text-decoration: none;
 }
 
 .btn {
@@ -167,6 +178,12 @@ a {
 .btn-play .play-icon:hover {
   background: #dadada;
   cursor: pointer;
+}
+.btn-play:hover {
+  cursor: pointer;
+}
+.btn-play:hover .play-text {
+  text-decoration: underline;
 }
 
 .row {
@@ -839,7 +856,7 @@ a {
 }
 .reviews-wrap .reviews-title {
   font-weight: 600;
-  font-size: 58px;
+  font-size: 3.625rem;
   line-height: 74px;
   color: #424232;
   text-align: center;
@@ -881,7 +898,7 @@ a {
 }
 .reviews-wrap .review-slider .review-card .review-desc {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 30px;
   color: #8c8e90;
 }
@@ -893,13 +910,13 @@ a {
   cursor: pointer;
 }
 .reviews-wrap .review-slider .review-card.active {
-  font-size: 28px;
+  font-size: 1.75rem;
   max-width: 700px;
   box-shadow: 30px 30px 70px rgba(99, 98, 98, 0.06);
   padding: 50px;
 }
 .reviews-wrap .review-slider .review-card.active .review-desc {
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 40px;
 }
 .reviews-wrap .review-slider .review-card.active .review-avatar {
@@ -933,7 +950,7 @@ a {
 }
 .ticket-title {
   max-width: 750px;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 68px;
   color: #ffffff;
 }
@@ -946,12 +963,28 @@ a {
     padding: 40px;
   }
   .ticket-title {
-    font-size: 30px;
+    font-size: 1.875rem;
     line-height: 40px;
   }
   .ticket-buttons {
     flex-direction: column;
   }
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.75rem;
+  padding: 10px 15px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--primary-color);
+  transition: 0.2s;
+  transform: translateY(100px);
+}
+.top-btn.active {
+  transform: translateY(0);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,25 +8,26 @@
         <title>Document</title>
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="top">
             <div class="container container-nav">
                 <a href="#" class="nav-logo"><span>U</span>-coda</a>
                 <nav class="nav">
                     <a href="#" class="nav-link">Home</a>
                     <div class="dropdown">
-                        <a href="#" class="dropbtn nav-link">
+                        <button class="dropbtn nav-link">
                             All Courses
                             <span class="dropbtn-icon-up">
                                 <i class="icon-chevron-up"></i>
                             </span>
                             <span class="dropbtn-icon-down active">
                                 <i class="icon-chevron-down"></i> </span
-                        ></a>
+                        ></button>
                         <div class="dropdown-content">
-                            <a href="#" class="nav-link">Modern Business</a>
-                            <a href="#" class="nav-link">Digital Marketing</a>
-                            <a href="#" class="nav-link">Programming</a>
-                            <a href="#" class="nav-link">Graphic Design</a>
+                            <a href="#modern-business" class="nav-link drop-link">Modern Business</a>
+                            <a href="#digital-marketing" class="nav-link drop-link">Digital Marketing</a>
+                            <a href="#programming" class="nav-link drop-link">Programming</a>
+                            <a href="#graphic-design" class="nav-link drop-link">Graphic Design</a>
+                            <a href="#lifestyle" class="nav-link drop-link">LifeStyle</a>
                         </div>
                     </div>
                     <a href="#" class="nav-link">Pricing</a>
@@ -65,7 +66,7 @@
                             <span class="play-icon">
                                 <i class="icon-start"></i>
                             </span>
-                            Play Video
+                            <span class="play-text">Play Video</span>
                         </button>
                     </div>
                 </div>
@@ -142,7 +143,7 @@
                             <span class="play-icon">
                                 <i class="icon-start"></i>
                             </span>
-                            See How it Works
+                            <span class="play-text">See how it works</span>
                         </button>
                     </div>
                 </div>
@@ -153,7 +154,7 @@
                     <h2 class="title courses-title">Our Popular Courses</h2>
 
                     <div class="courses-item">
-                        <div class="course-card">
+                        <div class="course-card" id="modern-business">
                             <div class="course-preview">
                                 <img
                                     src="assets/img/course-preview-1.png"
@@ -196,7 +197,7 @@
                             </article>
                         </div>
 
-                        <div class="course-card">
+                        <div class="course-card" id="digital-marketing">
                             <div class="course-preview">
                                 <img
                                     src="assets/img/course-preview-2.png"
@@ -239,7 +240,7 @@
                             </article>
                         </div>
 
-                        <div class="course-card">
+                        <div class="course-card" id="programming">
                             <div class="course-preview">
                                 <img
                                     src="assets/img/course-preview-3.png"
@@ -282,7 +283,7 @@
                             </article>
                         </div>
 
-                        <div class="course-card">
+                        <div class="course-card" id="graphic-design">
                             <div class="course-preview">
                                 <img
                                     src="assets/img/course-preview-4.png"
@@ -326,7 +327,7 @@
                             </article>
                         </div>
 
-                        <div class="course-card">
+                        <div class="course-card" id="lifestyle">
                             <div class="course-preview">
                                 <img
                                     src="assets/img/course-preview-5.png"
@@ -507,6 +508,10 @@
             </div>
         </main>
 
+
+        <a href="#top" class="top-btn">
+            <i class="icon-arrow-up"></i>
+        </a>
         <div class="overlay"></div>
 
         <script src="assets/js/jquery-3.6.3.min.js"></script>

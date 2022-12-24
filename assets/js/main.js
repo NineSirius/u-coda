@@ -21,5 +21,21 @@ dropbtn.on("click", function () {
     $(".dropbtn-icon-down").toggleClass("active");
 });
 
-const slider = $(".reviews-slider");
-const sliderItems = $(".review-card");
+const dropLinks = $(".drop-link");
+
+dropLinks.on("click", function () {
+    $(".hamburger").removeClass("is-active");
+    $(".nav").removeClass("is-active");
+    $(".overlay").removeClass("is-active");
+    $("body").removeClass("fixed");
+});
+
+window.addEventListener("scroll", function () {
+    wScroll = this.scrollY;
+
+    if (wScroll >= 500) {
+        $(".top-btn").addClass("active");
+    } else {
+        $(".top-btn").removeClass("active");
+    }
+});

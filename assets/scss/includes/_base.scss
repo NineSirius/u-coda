@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -25,6 +29,10 @@ a {
     text-decoration: underline;
     font-size: 1rem;
     font-weight: 600;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .btn {
@@ -97,6 +105,14 @@ a {
             cursor: pointer;
         }
     }
+
+    &:hover {
+        .play-text {
+            text-decoration: underline;
+        }
+        cursor: pointer;
+    }
+    
 }
 
 .row {
