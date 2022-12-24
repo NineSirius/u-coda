@@ -131,7 +131,7 @@
     padding: 5px 0;
 
     .courses-btn {
-        margin: 20px 0;
+        margin: 20px 0 100px 0;
         align-self: center;
     }
 }
@@ -268,5 +268,106 @@
 
     @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.reviews-wrap {
+    padding: 100px;
+
+    @include _530px {
+        padding: 20px;
+    }
+
+    .reviews-title {
+        font-weight: 600;
+        font-size: 58px;
+        line-height: 74px;
+        color: #424232;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .review-slider {
+        display: flex;
+        gap: 75px;
+
+        .slider-active {
+            flex-basis: 60%;
+
+            @include _530px {
+                flex-basis: 100%;
+            }
+        }
+
+        .slider-not-active {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            flex-basis: 40%;
+
+            @include _530px {
+                flex-basis: 100%;
+            }
+        }
+
+        .review-card {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            gap: 30px;
+            padding: 50px 38px;
+            transition: 0.2s;
+
+            .review-desc {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                color: #8c8e90;
+            }
+
+            background: #ffffff;
+            border: 1px solid rgba(231, 231, 231, 0.7);
+            border-radius: 15px;
+
+            .review-avatar {
+                max-width: 90px;
+            }
+
+            &:hover {
+                background: #f2f2f2;
+                cursor: pointer;
+            }
+        }
+
+        .review-card.active {
+            font-size: 28px;
+            max-width: 700px;
+            box-shadow: 30px 30px 70px rgba(99, 98, 98, 0.06);
+            padding: 50px;
+
+            .review-desc {
+                font-size: 28px;
+                line-height: 40px;
+            }
+
+            .review-avatar {
+                max-width: 142px;
+            }
+
+            &:hover {
+                background: #ffffff;
+                cursor: unset;
+            }
+        }
+
+        @include _992px {
+            flex-direction: column;
+            align-items: center;
+
+            .review-card {
+                align-items: center;
+                text-align: center;
+            }
+        }
     }
 }
