@@ -382,12 +382,6 @@ a {
     justify-content: center;
   }
 }
-@media (max-width: 530px) {
-  .header .header-buttons {
-    flex-direction: column;
-    align-self: center;
-  }
-}
 @media (max-width: 768px) {
   .header {
     background-size: 100%;
@@ -398,10 +392,14 @@ a {
 }
 @media (max-width: 530px) {
   .header {
-    background: unset;
+    background: none;
   }
   .header .header-content {
-    margin-top: 300px;
+    margin-top: unset;
+  }
+  .header .header-buttons {
+    flex-direction: column;
+    align-self: center;
   }
 }
 
@@ -607,6 +605,12 @@ a {
   .header-content .header-title {
     font-size: 3rem;
     line-height: 3.75rem;
+  }
+}
+@media (max-width: 530px) {
+  .header-content .header-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 .header-content .header-buttons {

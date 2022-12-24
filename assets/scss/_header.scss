@@ -22,13 +22,6 @@
         }
     }
 
-    @include _530px {
-        .header-buttons {
-            flex-direction: column;
-            align-self: center;
-        }
-    }
-
     @include _768px {
         background-size: 100%;
 
@@ -38,9 +31,16 @@
     }
 
     @include _530px {
-        background: unset;
+        background: none;
+
+        
         .header-content {
-            margin-top: 300px;
+            margin-top: unset;
+        }
+
+        .header-buttons {
+            flex-direction: column;
+            align-self: center;
         }
     }
 }
@@ -266,6 +266,11 @@
         @include _768px {
             font-size: 3rem;
             line-height: 3.75rem;
+        }
+
+        @include _530px {
+            font-size: 2rem;
+            line-height: 2.5rem;
         }
     }
 
