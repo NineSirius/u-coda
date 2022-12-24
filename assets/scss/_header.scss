@@ -38,6 +38,7 @@
     }
 
     @include _530px {
+        background: unset;
         .header-content {
             margin-top: 300px;
         }
