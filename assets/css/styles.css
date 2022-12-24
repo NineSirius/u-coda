@@ -397,6 +397,9 @@ a {
   }
 }
 @media (max-width: 530px) {
+  .header {
+    background: unset;
+  }
   .header .header-content {
     margin-top: 300px;
   }
