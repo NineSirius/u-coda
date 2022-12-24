@@ -365,15 +365,19 @@ a {
   background: url(../img/header-bg.png) no-repeat;
   background-color: #e4f5eb;
   background-position: 100% 70%;
-  padding: 10px 0 50px 0;
+  padding: 10px 20px 50px 20px;
 }
 @media (max-width: 1500px) {
   .header {
-    background-position: center 20%;
+    background-position: 100% 50%;
+    background-size: 50%;
+  }
+}
+@media (max-width: 1280px) {
+  .header {
+    background: none;
   }
   .header .header-content {
-    margin-top: 700px;
-    padding: 10px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -391,9 +395,6 @@ a {
   }
 }
 @media (max-width: 530px) {
-  .header {
-    background: none;
-  }
   .header .header-content {
     margin-top: unset;
   }
