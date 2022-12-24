@@ -79,6 +79,16 @@
     content: "\ea1c";
 }
 
+.icon-chevron-down:before {
+    content: "\e901";
+    color: #575859;
+}
+
+.icon-chevron-up:before {
+    content: "\e900";
+    color: #575859;
+}
+
 :root {
     --primary-color: #45b871;
 
