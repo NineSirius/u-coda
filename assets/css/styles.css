@@ -188,6 +188,35 @@ a {
   }
 }
 
+.btn2 {
+  padding: 22px 31px;
+  background: #fff;
+  color: #242323;
+  border-radius: 5px;
+  border: unset;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  line-height: 15px;
+  color: #242323;
+  transition: 0.3s;
+}
+.btn2:hover {
+  background: unset;
+  color: #fff;
+  outline: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.btn2-outline {
+  background: unset;
+  border: 1px solid #fff;
+  color: #ffffff;
+}
+.btn2-outline:hover {
+  background: #ffffff;
+  color: #242323;
+}
+
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -317,6 +346,7 @@ a {
   max-width: 1920px;
   margin: 0 auto;
   background: url(../img/header-bg.png) no-repeat;
+  background-color: #E4F5EB;
   background-position: 100% 100%;
 }
 @media (max-width: 1500px) {
@@ -364,6 +394,11 @@ a {
   line-height: 15px;
   color: #575859;
   line-height: 25px;
+  transition: 0.3s;
+}
+.container-nav .nav-link:hover {
+  color: #303131;
+  font-weight: 600;
 }
 @media (max-width: 768px) {
   .container-nav .nav {
@@ -598,6 +633,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 50px 0;
 }
 .start-col .start-card {
   display: flex;
@@ -760,8 +796,8 @@ a {
   line-height: 15px;
   color: #4c68ff;
 }
-.courses-item .course-card:hover {
-  transform: translateY(-25px);
+.courses-item .course-card:nth-child(2), .courses-item .course-card:nth-child(5) {
+  transform: translateY(-50px);
 }
 @media (max-width: 1150px) {
   .courses-item {
@@ -867,6 +903,27 @@ a {
     align-items: center;
     text-align: center;
   }
+}
+
+.ticket {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  background: url(../img/end.svg) no-repeat;
+  padding: 100px;
+  background-position: center;
+  text-align: center;
+}
+.ticket-title {
+  max-width: 750px;
+  font-size: 50px;
+  line-height: 68px;
+  color: #ffffff;
+}
+.ticket-buttons {
+  display: flex;
+  gap: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

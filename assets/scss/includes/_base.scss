@@ -117,3 +117,34 @@ a {
         align-items: center;
     }
 }
+
+.btn2 {
+    padding: 22px 31px;
+    background: #fff;
+    color: #242323;
+    border-radius: 5px;
+    border: unset;
+    text-transform: capitalize;
+
+    font-size: 1.25rem;
+    line-height: 15px;
+    color: #242323;
+    transition: .3s;
+    &:hover {
+        background: unset;
+        color: #fff;
+        outline: 1px solid #ffffff;
+        cursor: pointer;
+    }
+}
+
+.btn2-outline {
+    background: unset;
+    border: 1px solid #fff;
+    color: #ffffff;
+
+    &:hover {
+        background: #ffffff;
+        color: #242323;
+    }
+}
